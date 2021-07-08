@@ -29,6 +29,7 @@
 		D135A52D2683E362003DC216 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135A52C2683E362003DC216 /* MapView.swift */; };
 		D135A52F2683E372003DC216 /* GalleyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135A52E2683E372003DC216 /* GalleyView.swift */; };
 		D135A5312683E39D003DC216 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135A5302683E39D003DC216 /* MainView.swift */; };
+		D1FDEB3F26979F0200CD3A2F /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FDEB3E26979F0200CD3A2F /* CoverImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		D135A52C2683E362003DC216 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D135A52E2683E372003DC216 /* GalleyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleyView.swift; sourceTree = "<group>"; };
 		D135A5302683E39D003DC216 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D1FDEB3E26979F0200CD3A2F /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		D135A4FB267958EF003DC216 /* AfricaApp-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D1FDEB3D26979EC200CD3A2F /* View */,
 				D135A520267D45C1003DC216 /* Data */,
 				D135A50B267D451F003DC216 /* Video */,
 				D135A5292683E301003DC216 /* App */,
@@ -145,6 +148,14 @@
 				D135A5302683E39D003DC216 /* MainView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		D1FDEB3D26979EC200CD3A2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1FDEB3E26979F0200CD3A2F /* CoverImageView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			files = (
 				D135A4FF267958EF003DC216 /* ContentView.swift in Sources */,
 				D135A5312683E39D003DC216 /* MainView.swift in Sources */,
+				D1FDEB3F26979F0200CD3A2F /* CoverImageView.swift in Sources */,
 				D135A52D2683E362003DC216 /* MapView.swift in Sources */,
 				D135A52F2683E372003DC216 /* GalleyView.swift in Sources */,
 				D135A4FD267958EF003DC216 /* AfricaApp_SwiftUIApp.swift in Sources */,

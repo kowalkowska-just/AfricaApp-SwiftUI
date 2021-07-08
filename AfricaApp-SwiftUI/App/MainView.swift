@@ -11,9 +11,9 @@ struct MainView: View {
     var body: some View {
         TabView {
             ContentView()
-            tabItem {
-                Image(systemName: "square.grid.2x2")
-                Text("Browse")
+                .tabItem {
+                    Image(systemName: "square.grid.2x2")
+                    Text("Browse")
             }
             
             VideoListView()
