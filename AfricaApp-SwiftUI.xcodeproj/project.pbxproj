@@ -31,6 +31,7 @@
 		D135A5312683E39D003DC216 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135A5302683E39D003DC216 /* MainView.swift */; };
 		D1FDEB3F26979F0200CD3A2F /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FDEB3E26979F0200CD3A2F /* CoverImageView.swift */; };
 		D1FDEB422697A4CE00CD3A2F /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FDEB412697A4CE00CD3A2F /* CoverImageModel.swift */; };
+		D1FDEB452697A77200CD3A2F /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FDEB442697A77200CD3A2F /* CodableBundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		D135A5302683E39D003DC216 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D1FDEB3E26979F0200CD3A2F /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		D1FDEB412697A4CE00CD3A2F /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		D1FDEB442697A77200CD3A2F /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		D135A4FB267958EF003DC216 /* AfricaApp-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D1FDEB432697A70A00CD3A2F /* Extension */,
 				D1FDEB402697A49E00CD3A2F /* Model */,
 				D1FDEB3D26979EC200CD3A2F /* View */,
 				D135A520267D45C1003DC216 /* Data */,
@@ -167,6 +170,14 @@
 				D1FDEB412697A4CE00CD3A2F /* CoverImageModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D1FDEB432697A70A00CD3A2F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D1FDEB442697A77200CD3A2F /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 				D135A52F2683E372003DC216 /* GalleyView.swift in Sources */,
 				D135A4FD267958EF003DC216 /* AfricaApp_SwiftUIApp.swift in Sources */,
 				D135A52B2683E344003DC216 /* VideoListView.swift in Sources */,
+				D1FDEB452697A77200CD3A2F /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
