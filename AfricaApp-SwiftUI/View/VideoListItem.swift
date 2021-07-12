@@ -8,13 +8,53 @@
 import SwiftUI
 
 struct VideoListItem: View {
+    
+    //MARK: - Properties
+    
+    let video: Video
+    
+    //MARK: - Body
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            ZStack {
+                Image("video-\(video.thumbnail)")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 80)
+                    .cornerRadius(9)
+                
+                Image(systemName: "play.circle")
+                    .resizable()
+                    .scaledToFit()
+                    .shadow(radius: 4)
+                    .frame(height: 32)
+            } //: ZStack
+            
+            VStack(alignment: .leading, spacing: 10) {
+                Text(video.name)
+                    .font(.title2)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.accentColor)
+                
+                Text(video.headline)
+                    .font(.footnote)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
+            } //: VStack
+        } //: HStack
     }
 }
 
+//MAR: - Preview
+
 struct VideoListItem_Previews: PreviewProvider {
+    
+    static let videos: [Video] = Bundle.main.decode("videos.json")
+    
     static var previews: some View {
-        VideoListItem()
+        VideoListItem(video: videos[0])
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
